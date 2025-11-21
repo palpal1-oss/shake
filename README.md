@@ -1,3 +1,47 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔴 CRITICAL DIFFERENCE BETWEEN shake.py AND deep-shake.py
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚡ shake.py — Short-Term Surface Stress Model (0–30 days ahead)
+--------------------------------------------------------------
+• Shows activation zones that appear **60–100 days before real events**
+• Tracks **crustal stress**, **energy halos**, **plasticity**, and **migration**
+• Produces short-term windows with an **uncontrolled uncertainty of 0–72 hours**
+
+➤ Interpretation:
+A hotspot for “tomorrow” may occur *any time from now to +72 hours*.
+
+This is normal and expected because surface activation depends on
+brittle-failure timing, not deterministic schedule.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔵 deep-shake.py — Deep-Structure + Super-Event Candidate Model
+---------------------------------------------------------------
+This model requires the **full available earthquake catalog**, including:
+
+• microquakes 1.0–2.0  
+• moderate events  
+• major events 6–8+  
+• full long-window sequences (60–180+ days recommended)
+
+deep-shake.py reconstructs **deep, slow energy structures** and identifies:
+
+• long-term high-magnitude candidates  
+• M8+ / M9– class “super-event” precursors  
+• multi-exit fault systems (same candidate → multiple possible surface points)  
+• decade-scale mantle-driven anomalies, not short-term prediction  
+
+🟦 IMPORTANT:
+deep-shake.py does **NOT** predict exact dates.  
+It shows *structural inevitability*, not timing.
+
+★★★ The deeper the input catalog, the more accurate the model becomes. ★★★
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+
 Earthquake Energy Field Predictor (Depth-Aware Global Model)
 
 This project contains two complementary seismic-analysis systems:
