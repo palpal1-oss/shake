@@ -1,54 +1,95 @@
-Non-Commercial Open License (NCOL-1.0)
-Based on MIT License — Extended Non-Commercial Clause
+NCOL-2.0 — Non-Commercial Open License (Enhanced Derivative Protection)
 Copyright (c) 2025
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to use,
-copy, modify, merge, publish, and distribute the Software, and to create 
-derivative works based upon it, subject to all of the following conditions:
+copy, modify, and distribute it solely under the following conditions:
 
-1. NON-COMMERCIAL USE ONLY  
-   The Software, including any modified version, fork, adaptation, component,
-   or derivative work, may be used exclusively for non-commercial purposes.
-   Any form of commercialization is strictly prohibited.
-   This includes, without limitation:
-   - direct sale, resale, licensing, sublicensing, or rental of the Software;  
-   - paid access, subscriptions, or paywalls;  
-   - monetized services, consulting, or analysis that rely on the Software;  
-   - receiving compensation in any form, including money, cryptocurrency,
-     digital tokens, in-kind exchange, bartering, donation-based access,
-     or any other economic transaction.
+1. NON-COMMERCIAL USE ONLY
 
-2. OPEN DISTRIBUTION REQUIREMENT  
-   Any redistribution, fork, derivative project, or modified version of the
-   Software must remain fully open-source, publicly accessible in its complete
-   form, and must retain this License without alteration. No portion of the
-   Software or derivative works may be distributed in proprietary, closed-
-   source, encrypted, or obfuscated form.
+The Software and any Derivative Work (as defined below) may be used exclusively for non-commercial purposes.
 
-3. PROHIBITION OF COMMERCIAL DERIVATIVES  
-   The creation, publication, distribution, or use of any product or service
-   derived from the Software for commercial, revenue-generating, or otherwise
-   compensated activities is expressly forbidden. Any attempt to monetize any
-   part of the Software, or any work that depends on the Software, shall be
-   considered a violation of this License.
+Commercial use is strictly prohibited, including but not limited to:
 
-4. LEGAL COMPLIANCE  
-   The Software may not be used for any action that violates applicable
-   local, national, or international law. The user bears full responsibility
-   for ensuring lawful use.
+sale, resale, licensing, SaaS, subscriptions, API access fees;
 
-5. NO WARRANTY  
-   THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-   FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+paid consulting, integration, customization, training, analysis;
 
-6. DISCLAIMER OF LIABILITY  
-   IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-   DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR
-   OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE
-   USE OF, OR OTHER DEALINGS IN, THE SOFTWARE.
+indirect monetization, donations for access, sponsorship-for-use;
 
-7. ACCEPTANCE OF LICENSE  
-   By using, copying, modifying, or distributing the Software, the user agrees
-   to be bound by all terms and conditions of this License.
+any economic activity where the Software or its Derivatives provide
+essential functionality, computation, or value.
+
+2. DEFINITION OF DERIVATIVE WORK (EXTENDED)
+
+For the purposes of this License, “Derivative Work” includes, but is not limited to:
+
+modifications, forks, translations, ports, or adaptations;
+
+reimplementations, rewrites, or re-expressions in another language,
+framework, paradigm, or architecture;
+
+any work exhibiting substantial similarity in:
+
+functionality,
+
+structure,
+
+algorithms,
+
+data models,
+
+behavior or interface;
+
+components, wrappers, modules, or services that depend on the Software
+for core functionality, including API wrappers and service layers.
+
+A claim of “clean-room implementation” does not exempt a work from being
+considered a Derivative if substantial similarity is present.
+
+3. OPEN DISTRIBUTION REQUIREMENT
+
+Any Derivative Work must:
+
+remain fully open-source;
+
+include complete readable source code;
+
+be publicly accessible without paywalls, registration, or access restrictions;
+
+be distributed solely under this same License (NCOL-2.0), without alteration.
+
+No part of the Software or any Derivative Work may be:
+
+closed-source, proprietary, binary-only, encrypted, or obfuscated;
+
+split into open and closed components to circumvent this clause;
+
+bundled with proprietary components that rely on or integrate with the Software.
+
+4. PROHIBITION OF COMMERCIAL DERIVATIVES
+
+The creation, distribution, or use of Derivative Works in any commercial
+or revenue-generating context is prohibited.
+
+This includes commercial products or services which:
+
+rely on the Software for computation, logic, or data processing;
+
+provide access to the Software through an API, web interface, backend, or service;
+
+incorporate or depend on the Software even if the Software itself is not distributed.
+
+5. LEGAL COMPLIANCE
+
+The Software may not be used in violation of applicable law.
+
+6. NO WARRANTY AND LIABILITY DISCLAIMER
+
+The Software is provided “AS IS”, without warranty of any kind.
+In no event shall the authors be liable for any damages arising from use.
+
+7. ACCEPTANCE OF LICENSE
+
+By using, copying, modifying, or distributing the Software, the user agrees
+to be bound by all terms of this License.
