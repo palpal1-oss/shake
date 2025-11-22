@@ -3,6 +3,9 @@
 
 # follow the link for the full article or you can read a short summary in PDF next to it
 
+
+#!/usr/bin/env python3
+
 import os
 import sys
 import json
@@ -20,19 +23,24 @@ import plotly.graph_objects as go
 import reverse_geocoder as rg
 
 
-FETCH_DAYS = 1           # how many days back to fetch events (default 7)
+TIME_MAG_THRESHOLD = 5.5
+MICRO_RADIUS_KM = 120
+MICRO_MAX_AGE_HOURS = 48
+MICRO_MIN_MAG = 0.5
+MICRO_MAX_MAG = 2.5
+FETCH_DAYS = 60          # how many days back to fetch events (default 7)
 MIN_MAG_FETCH = 1.0      # min magnitude to download
 L_KM = 100.0             # horizontal kernel lengthscale (km)
 L_DEPTH = 80.0           # depth attenuation lengthscale (km) for event energy
-NX = 60                  # grid resolution lon (cells)
-NY = 40                  # grid resolution lat (cells)
+NX = 80                  # grid resolution lon (cells)
+NY = 80                  # grid resolution lat (cells)
 LAM = 1e10               # Tikhonov regularization strength
 M_MIN_SHOW = 4.0         # show predicted cells with M_pred >= this
 CACHE_FILE = "usgs_cache_recent.json"
 OUTPUT_HTML = "quake_predictor_globe_depth_plasticity.html"
 GRID_MARGIN_DEG = 1.0    # degrees margin around events bounding box
 MAX_DAYS_AHEAD = 30      # slider range 0..30
-TAU_DAYS = 7.0           # temporal decay timescale in days
+TAU_DAYS = 5.0           # temporal decay timescale in days
 E_MIN_MAG = 2.0          # baseline mag for halo radius calc
 MAX_HALO_RADIUS_KM = 1000.0  # cap halo radius to avoid massive circles
 BVALUE_RADIUS_KM = 150   # radius around point to compute local b-value
@@ -68,7 +76,7 @@ def haversine_km_vec(lat1, lon1, lat_arr, lon_arr, R=6371.0):
     c = 2 * np.arctan2(np.sqrt(a), np.sqrt(1-a))
     return R * c
 
-# single-pair
+# single-pair haversine (km)
 def haversine_km(lat1, lon1, lat2, lon2, R=6371.0):
     lat1r = math.radians(lat1); lon1r = math.radians(lon1)
     lat2r = math.radians(lat2); lon2r = math.radians(lon2)
@@ -109,7 +117,7 @@ def circle_polygon(lat0, lon0, R_km, npoints=72):
     return lat_circle.tolist(), lon_circle.tolist()
 
 
-def fetch_usgs_day_csv(start, end, minmagnitude=1.0, timeout=40, attempt_pause=0.2):
+def fetch_usgs_day_csv(start, end, minmagnitude=1.0, timeout=90, attempt_pause=0.2):
     params = {
         "format": "csv",
         "starttime": start,
@@ -163,7 +171,7 @@ def fetch_usgs_multi(days_back, minmagnitude=1.0, start_date=None):
     if start_date is None:
         now = datetime.utcnow()
     else:
-        # accept YYYY-MM-DD or YYYY-MM-DDTHH:MM
+        # accept YYY-M-DD or YY-MM-DDTHH:M
         try:
             now = datetime.strptime(start_date, "%Y-%m-%d")
         except Exception:
@@ -255,6 +263,94 @@ def get_land_or_sea(lat, lon):
         return f"OCEAN ({lat:.2f}, {lon:.2f})"
 
 
+
+def compute_micro_trigger(df, lat, lon,
+                          r_km=MICRO_RADIUS_KM,
+                          max_age_hours=MICRO_MAX_AGE_HOURS,
+                          min_mag=MICRO_MIN_MAG,
+                          max_mag=MICRO_MAX_MAG):
+
+    if df.empty:
+        return 0.0, "no data"
+
+    now = df["time"].max()
+    if pd.isna(now):
+        return 0.0, "no timestamps"
+
+    # фильтруем время + маленькие магнитуды
+    df2 = df[
+        (df["mag"] >= min_mag) &
+        (df["mag"] <= max_mag) &
+        (df["time"] >= now - pd.Timedelta(hours=max_age_hours))
+    ]
+
+    if df2.empty:
+        return 0.0, "no micro eqs"
+
+    dists = haversine_km_vec(lat, lon,
+                             df2["lat"].values,
+                             df2["lon"].values)
+    df_local = df2[dists <= r_km]
+
+    if df_local.empty:
+        return 0.0, "no micro nearby"
+
+    # интервалы между микро-событиями
+    times = np.sort(df_local["time"].values.astype("datetime64[s]"))
+    if len(times) < 2:
+        return 0.0, "1 micro-event"
+
+    deltas = np.diff(times) / np.timedelta64(1, "s")
+    mean_dt = np.mean(deltas) if len(deltas) else 99999
+
+    count = len(times)
+    mean_mag = df_local["mag"].mean()
+
+    # 🔥 Micro Trigger Index
+    mti = count * mean_mag * (1.0 / (mean_dt + 1e-6))
+
+    if mti < 1e-5:
+        msg = "weak micro activity"
+    elif mti < 1e-4:
+        msg = "moderate micro clustering"
+    else:
+        msg = "STRONG micro-trigger"
+
+    return float(mti), msg
+
+def estimate_time_window(mnow, m0, days_passed, mti):
+
+    if mnow < TIME_MAG_THRESHOLD:
+        return ""
+
+    if days_passed <= 0:
+        return ""
+
+    if m0 is None:
+        return ""
+
+    rate = (mnow - m0) / float(days_passed)
+    if rate <= 0:
+        return ""
+
+    # оценка достижения M6, если меньше 6
+    if mnow < 6.0:
+        t_hit_days = (6.0 - mnow) / rate
+        if t_hit_days < 0:
+            t_hit_days = 0
+    else:
+        t_hit_days = 0
+
+    # MTI → окно времени (центральная часть модели)
+    if mti < 1e-5:
+        window = "48–72 hours"
+    elif mti < 1e-4:
+        window = "24–48 hours"
+    else:
+        window = "0–24 hours"
+
+    return f"<br><b>Time-window:</b> {window}"
+
 def build_and_save_globe(start_date=None, fetch_days=FETCH_DAYS, min_fetch_mag=MIN_MAG_FETCH,
                          nx=NX, ny=NY, l_km=L_KM, l_depth=L_DEPTH,
                          lam=LAM, days_ahead_max=MAX_DAYS_AHEAD):
@@ -289,7 +385,7 @@ def build_and_save_globe(start_date=None, fetch_days=FETCH_DAYS, min_fetch_mag=M
     frames = []
     direct_mag_day0 = None
     inv_mag_day0 = None
-
+    # Precompute now for time extrapolation base
     base_now = datetime.utcnow()
     for days in range(0, days_ahead_max + 1):
         log("Computing frame for days ahead:", days)
@@ -367,7 +463,7 @@ def build_and_save_globe(start_date=None, fetch_days=FETCH_DAYS, min_fetch_mag=M
                 ih_lats += latc_list + [None]; ih_lons += lonc_list + [None]
         big = df[df["mag"] >= 4.0]
         traces = []
-        # Direct with plasticity & hover
+        # Direct with plasticity & hover (also compute time estimate if mag >=6)
         direct_texts=[]; direct_colors=[]; direct_sizes2=[]
         for latv, lonv, magv in zip(d_lats, d_lons, d_mags):
             b, plast = region_b_value(df, float(latv), float(lonv), radius_km=BVALUE_RADIUS_KM)
@@ -383,7 +479,7 @@ def build_and_save_globe(start_date=None, fetch_days=FETCH_DAYS, min_fetch_mag=M
             tsunami_msg = ""
             if is_ocean and magv >= 6.5 and depth_est <= 50:
                 tsunami_msg = "<br><b>* Hey, this is dangerous — possible tsunami risk *</b>"
-
+            # Time prediction for M>=6: compute linear growth rate from day0 to current day
             time_msg = ""
             try:
                 # find grid indices
@@ -406,7 +502,28 @@ def build_and_save_globe(start_date=None, fetch_days=FETCH_DAYS, min_fetch_mag=M
                 # else: no valid prediction
             except Exception:
                 time_msg = ""
-            direct_texts.append(f"<b>Direct M_pred={magv:.2f}</b><br>Depth_est: {depth_est:.1f} km<br>{loc}{tsunami_msg}{time_msg}<br>b={b if b else 'N/A'}, plast={plast:.2f}")
+            mti, mti_info = compute_micro_trigger(df,
+                                                  float(latv),
+                                                  float(lonv),
+                                                  r_km=MICRO_RADIUS_KM,
+                                                  max_age_hours=MICRO_MAX_AGE_HOURS)
+
+            # Time-window
+            time_window_msg = estimate_time_window(
+                mnow=float(magv),
+                m0=float(inv_mag_day0[i_idx_closest, j_idx_closest]) if inv_mag_day0 is not None else None,
+                days_passed=days,
+                mti=mti
+            )
+
+            direct_texts.append(
+                f"<b>Direct M_pred={magv:.2f}</b>"
+                f"<br>Depth_est: {depth_est:.1f} km"
+                f"<br>{loc}{tsunami_msg}{time_msg}"
+                f"{time_window_msg}"
+                f"<br>b={b if b else 'N/A'}, plast={plast:.2f}"
+                f"<br>Micro-trigger: {mti:.3e} — {mti_info}"
+            )
         traces.append(go.Scattergeo(
             lon = d_lons.tolist(),
             lat = d_lats.tolist(),
@@ -606,3 +723,5 @@ if __name__ == "__main__":
     except Exception as e:
         print("Error in main:", e)
         raise
+
+
