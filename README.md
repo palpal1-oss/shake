@@ -5,6 +5,7 @@
 ⚡ shake.py — Short-Term Surface Stress Model (0–30 days ahead)
 --------------------------------------------------------------
 • Shows activation zones that appear **60–100 days before real events**
+• The number of days loaded directly affects the accuracy
 • Tracks **crustal stress**, **energy halos**, **plasticity**, and **migration**
 • These parameters affect the efficiency and set the optimal grid choice for performance. NX = 80 NY = 80                  
  
@@ -27,7 +28,7 @@ This model requires the **full available earthquake catalog**, including:
 • microquakes 1.0–2.0  
 • moderate events  
 • major events 6–8+  
-• full long-window sequences (60–180+ days recommended)
+• full long-window sequences (60–180 days).  A couple of decades from 1.1 is recommended
 
 deep-shake.py reconstructs **deep, slow energy structures** and identifies:
 
