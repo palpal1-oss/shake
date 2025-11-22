@@ -8,16 +8,18 @@
 • The number of days loaded directly affects the accuracy
 • Tracks **crustal stress**, **energy halos**, **plasticity**, and **migration**
 • These parameters affect the efficiency and set the optimal grid choice for performance. NX = 80 NY = 80                  
+• In the program, you will see a globe with marked points. 
+• At the bottom of the screen there will be a slider where 0 is the current day and 1 is the next day, and so on, to view the evolution of the outbreak.
  
 
-By hovering over the event point you will see its parameter "b"
-If it is between 0.1 and 0.3, the area is very dangerous and the predicted magnitude may be higher.
-If it is between 0.3 and 0.5, then the danger is moderate; there is a slight chance of increasing the magnitude.
-If it is between 0.5 and 0.7, the predicted magnitude is correct.
-If it is between 0.7 and 0.9, the event is of little significance and the magnitude will be 0.7-1.5 points less.
-If it is between 0.9 and 2, then the event does not pose a threat in principle (light tremors)
-If the zone is above 2, it is not seismically dangerous at all and surface tremors are excluded, activity is only at the bottom
-An earthquake in water is usually about 0.9 points lower (water smooths it out)
+• By hovering over the event point you will see its parameter "b"
+• If it is between 0.1 and 0.3, the area is very dangerous and the predicted magnitude may be higher.
+• If it is between 0.3 and 0.5, then the danger is moderate; there is a slight chance of increasing the magnitude.
+• If it is between 0.5 and 0.7, the predicted magnitude is correct.
+• If it is between 0.7 and 0.9, the event is of little significance and the magnitude will be 0.7-1.5 points less.
+• If it is between 0.9 and 2, then the event does not pose a threat in principle (light tremors)
+• If the zone is above 2, it is not seismically dangerous at all and surface tremors are excluded, activity is only at the bottom
+• An earthquake in water is usually about 0.9 points lower (water smooths it out)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
