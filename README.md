@@ -1,4 +1,4 @@
-========================
+==========
 ==ATTENTION IMPORTANT.== 
 ======================== 
 During the download process, errors may appear that are not related to the program, but rather to the website's response. 
