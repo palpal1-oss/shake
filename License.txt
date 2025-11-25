@@ -1,129 +1,76 @@
-NCOL-3.0 — Non-Commercial Open License
-(Ultimate Future-Proof Anti-Monetization Edition)
+AAL-1.0 — Author-Reserved Anti-Monetization License 1.0
+Copyright © 2025–[forever] Deryabin Dmitri. All rights reserved worldwide.
 
-Copyright (c) 2025
+Preamble
+The Author is the sole creator and perpetual rights holder of the Software and the fundamental principles embodied therein.  
+This License is intentionally and irrevocably non-commercial in nature.  
+Any form of monetization, commercialization, or economic exploitation — direct or indirect, present or future — is permanently and unconditionally prohibited under this License.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this Software and associated documentation (“Software”), to use, copy, modify, and distribute it exclusively for non-commercial purposes, under the terms of this License.
+1. Definitions
+“Software” means the work covered by this License, in source and binary forms, and all Derivative Works.
+“Derivative Work” means any modification, extension, fork, translation, adaptation, or work based upon the Software.
+“You” means any individual or entity exercising rights under this License.
+“Author” means the copyright owner identified above — the sole originator of the Software and its governing principles.
 
-1. NON-COMMERCIAL USE ONLY
+2. Grant of Limited Non-Commercial License
+Subject to strict and continuous compliance with every term of this License, the Author grants You a worldwide, royalty-free, non-exclusive, non-sublicensable, non-transferable license to:
 
-The Software and any Derivative Work may be used only in non-commercial contexts.
+   a) use the Software for purely personal, educational, research, or non-profit purposes;
+   b) reproduce the Software;
+   c) prepare Derivative Works;
+   d) distribute the Software and Derivative Works in source code form only.
 
-All forms of commercial, economic, financial, or value-based activity involving the Software or its Derivatives are strictly prohibited.
+This license is granted exclusively for non-commercial use and terminates automatically upon any commercial or monetized activity.
 
-This prohibition includes—but is not limited to:
+3. Absolute Prohibition of Monetization and Commercial Use
+Under this License, You are forever prohibited from any act — direct or indirect — that results in monetary or economic benefit connected to the Software. This prohibition expressly includes, but is not limited to:
 
-sale, resale, licensing, subscriptions, SaaS, API access fees;
+   - selling, renting, leasing, licensing, or charging in any way;
+   - offering the Software or any Derivative Work as SaaS, PaaS, DaaS, API service, cloud instance, or hosted service (whether paid or “freemium”);
+   - incorporating the Software into any product, service, or system for which any fee, subscription, donation, or compensation is requested or received;
+   - using the Software within any for-profit entity if such use contributes to revenue, cost savings treated as profit, or competitive business advantage;
+   - accepting donations, sponsorships, grants, or rewards conditioned on access, features, support, or continued development of the Software;
+   - advertising, marketing, or promotional use;
+   - barter, trade, or exchange for goods, services, cryptocurrency, tokens, or anything of value;
+   - bundling with paid products or services, even if the Software itself is offered “free”.
 
-paid consulting, integration, support, customization, training;
+   Permitted use is restricted to natural persons acting in a purely private capacity and registered non-profit organizations with no revenue-generating activities.
 
-monetized services, advertising, sponsorships, donations-for-access;
+4. Mandatory Open Distribution Rules (Copyleft)
+Any distribution of the Software or Derivative Works is permitted only if ALL of the following conditions are simultaneously satisfied:
 
-any system where the Software contributes to revenue, profit, or economic gain.
+   a) distribution is completely free of charge and without any gating;
+   b) complete, corresponding, human-readable source code is provided;
+   c) this exact AAL-1.0 License text is included without modification;
+   d) clear attribution to the original Author is preserved in all copies;
+   e) the recipient receives rights exclusively under this AAL-1.0 — no additional or different terms may be imposed.
 
-2. FUTURE-PROOF COMMERCIAL VALUE PROHIBITION
+   Distribution in closed-source, obfuscated, compiled-only, or encrypted form is strictly forbidden.
 
-For the purpose of this License, “commercial”, “economic”, or “value” is defined as ANY mechanism that grants the user or operator benefit, compensation, credit, utility, capability, or exchange-value, whether direct or indirect.
+5. Author’s Reserved Rights
+The Author explicitly reserves all rights not expressly granted herein, including but specifically retains the unrestricted right to:
 
-This includes ANY present or future form of value, including mechanisms not yet invented.
+   - release new versions, branches, or rewrites under any license (including fully commercial or proprietary);
+   - dual-license or sell separate commercial licenses to third parties at any time;
+   - revoke or modify this License for future versions at the Author’s sole discretion.
 
-The prohibition explicitly covers:
+6. Automatic Termination
+Any violation of this License — however minor — causes immediate and irreversible termination of all rights granted to the violator. Continued use after termination constitutes willful copyright infringement punishable under applicable law.
 
-fiat currency, cryptocurrency, digital assets, tokens, coins, credits;
+   The Author may, at his sole discretion, issue a written cease-and-desist notice further confirming termination.
 
-barter, exchange of goods or services, trade of any kind;
+7. No Warranties — AS IS
+THE SOFTWARE IS PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, OR NON-INFRINGEMENT.
 
-points, rewards, loyalty systems, in-game economies;
+8. Limitation of Liability
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY arising from the Software or its use.
 
-compute-credits, energy-credits, time-based credits, hardware-based value units;
+9. Governing Law and Jurisdiction
+This License shall be governed by the laws of the Russian Federation without regard to conflict of law principles. Exclusive jurisdiction and venue for any dispute shall lie in the courts located at the Author’s primary place of residence.
 
-social credit, reputation systems, influence scores, algorithmic ranking;
+10. Severability & Entire Agreement
+If any provision of this License is held invalid or unenforceable, the remainder shall continue in full force. This License constitutes the entire agreement between You and the Author regarding the Software.
 
-AI-mediated or emergent economic systems;
+By using, copying, modifying, or distributing the Software, You irrevocably accept and agree to be bound by all terms of the above terms without exception or reservation.
 
-any unit of value or exchange that may arise in the future.
-
-If a system yields ANY benefit or exchange-value as a result of the Software’s use, such use is considered commercial and is prohibited.
-
-No future technology, economic innovation, or legal redefinition may narrow this prohibition.
-
-3. DEFINITION OF DERIVATIVE WORK
-
-“Derivative Work” includes any work that is based on, inspired by, derived from, or exhibits substantial similarity to the Software.
-
-This includes:
-
-modifications, patches, extensions, forks, translations, rewrites;
-
-reimplementations in any language, framework, or architecture;
-
-works reproducing algorithms, behavior, data structures, or interfaces;
-
-components, modules, services, or wrappers depending on the Software.
-
-Claims of “clean-room implementation” do not exempt a work if substantial similarity exists.
-
-4. OPEN DISTRIBUTION REQUIREMENTS
-
-Any Derivative Work must:
-
-remain fully open-source;
-
-publish complete, human-readable source code;
-
-be accessible without registration, payment, restriction, or gating;
-
-be distributed exclusively under this License (NCOL-3.0).
-
-Prohibited:
-
-closed-source or proprietary versions;
-
-obfuscated, binary-only, or encrypted releases;
-
-hybrid open/closed architectures designed to circumvent this License.
-
-5. PROHIBITION OF COMMERCIAL DERIVATIVES
-
-Derivative Works may not be used in any commercial, financial, or value-based system—even if:
-
-the Software itself is not distributed;
-
-the Derivative is accessible via API, backend, or web interface;
-
-the service is free, but monetization occurs elsewhere;
-
-the derivative output contributes to economic activity in any layer of the system.
-
-6. LEGAL COMPLIANCE
-
-Usage must comply with all applicable laws and regulations.
-
-7. NO WARRANTY
-
-The Software is provided “AS IS” without warranty of any kind.
-The authors are not liable for any damages arising from its use.
-
-8. AUTOMATIC TERMINATION
-
-Rights under this License terminate immediately and automatically if the user:
-
-violates any clause of the License;
-
-attempts to reinterpret or circumvent restrictions;
-
-uses the Software or Derivatives in a prohibited manner;
-
-fails to comply with open-source publication requirements.
-
-Upon termination, all rights to use, copy, distribute, or modify the Software and any Derivative are revoked.
-
-No reinstatement is possible without explicit written approval from the Author.
-
-9. CONTINUED USE AFTER TERMINATION
-
-Any continued use of the Software after rights have been terminated constitutes willful copyright infringement.
-
-10. ACCEPTANCE
-
-By using, copying, modifying, or distributing the Software, the user agrees to all terms of this License.
+— End of License —
