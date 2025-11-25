@@ -1,25 +1,7 @@
 #!/usr/bin/env python3
 """
-deepquake_v2.py
+deep_shake_v2.py
 
-Updated Deepquake engine — safer, robust, honest interval forecasts.
-
-Fixes and improvements over previous version:
-- Prevents overflow in date interval calculation by clamping windows to MAX_DAYS.
-- Uses timezone-aware UTC timestamps for displayed dates.
-- Safer local growth proxy and fallbacks if dE/dt is too small.
-- Adds a 'confidence' score (0..1) for each deep peak based on local growth ratio.
-- Ensures marker sizes are non-negative and finite.
-- Cleaner annotations placed as small text traces near deep peaks.
-- More informative hover text for surface candidate markers.
-- Defensive programming: all divisions guarded; non-finite values handled.
-- Writes interactive Plotly HTML file.
-
-Usage:
-    pip install numpy pandas scipy scikit-learn plotly requests
-    python deepquake_v2.py --days 60 --min-mag 2.5
-
-Author: assistant (generated for user)
 """
 
 import os, sys, time, math, json, argparse
@@ -481,3 +463,4 @@ def cli():
 
 if __name__ == "__main__":
     cli()
+
