@@ -1,9 +1,9 @@
 ========================
 ==ATTENTION IMPORTANT.== 
+======================== 
 During the download process, errors may appear that are not related to the program, but rather to the website's response. 
 In this case, the program will simply display several errors in a row and then continue downloading, which will take about 20 minutes. 
 However, there may or may not be any errors, depending on the website's response.
-========================               
                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
                🔴 CRITICAL DIFFERENCE BETWEEN shake.py AND deep-shake.py
                ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
