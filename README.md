@@ -1,3 +1,6 @@
+Any commercialization, paywalling, or source-code closure of this early-warning system is 
+permanently prohibited by the SFENCL-1.0 license and will be treated as endangerment of human lives.
+
 ==========
 ==ATTENTION IMPORTANT.== 
 ======================== 
