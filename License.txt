@@ -1,76 +1,72 @@
-AAL-1.0 — Author-Reserved Anti-Monetization License 1.0
-Copyright © 2025–[forever] Deryabin Dmitri. All rights reserved worldwide.
+SFENCL-1.0 — Safety-First Eternal Non-Commercial License 1.0
+Copyright © 2025–perpetuity [Your Full Legal Name]. All rights exclusively reserved by the Author.
 
 Preamble
-The Author is the sole creator and perpetual rights holder of the Software and the fundamental principles embodied therein.  
-This License is intentionally and irrevocably non-commercial in nature.  
-Any form of monetization, commercialization, or economic exploitation — direct or indirect, present or future — is permanently and unconditionally prohibited under this License.
+The Software exists for one purpose only: to protect human lives, critical infrastructure, and the environment through accurate, timely, and universally accessible weather forecasting, early-warning systems, climate monitoring, and related public-safety functions.
+
+Any commercialization, paywalling, or restriction of access to this Software is fundamentally incompatible with its life-saving mission and is therefore permanently and irrevocably prohibited under this License.
+
+The Author dedicates this work to the global public good while retaining the necessary control to prevent abuse that could endanger lives.
 
 1. Definitions
-“Software” means the work covered by this License, in source and binary forms, and all Derivative Works.
-“Derivative Work” means any modification, extension, fork, translation, adaptation, or work based upon the Software.
-“You” means any individual or entity exercising rights under this License.
-“Author” means the copyright owner identified above — the sole originator of the Software and its governing principles.
+“Software” means the work distributed under this License in source or binary form and all Derivative Works.
+“Derivative Work” means any modification, extension, fork, adaptation, translation, or other work based upon the Software.
+“Public-Safety Use” means non-commercial use by governments, meteorological services, emergency responders, humanitarian organizations, educational and research institutions, or individuals when the primary purpose is protecting human lives or critical infrastructure.
+“Author” means the original creator identified above and his/her legal successors.
 
-2. Grant of Limited Non-Commercial License
-Subject to strict and continuous compliance with every term of this License, the Author grants You a worldwide, royalty-free, non-exclusive, non-sublicensable, non-transferable license to:
+2. Irrevocable Grant for Public-Safety Use
+Subject only to the restrictions below, every person and organization worldwide is granted a perpetual, worldwide, royalty-free, irrevocable license to:
+   a) use, study, copy, modify, merge, publish, and redistribute the Software and Derivative Works;
+   b) deploy the Software in operational early-warning or public-safety systems;
+   c) incorporate the Software into larger systems provided the life-saving components remain free and unrestricted.
 
-   a) use the Software for purely personal, educational, research, or non-profit purposes;
-   b) reproduce the Software;
-   c) prepare Derivative Works;
-   d) distribute the Software and Derivative Works in source code form only.
+3. Eternal and Absolute Prohibition of Commercialization
+The Software and any Derivative Work MAY NEVER be:
+   a) sold, rented, leased, sublicensed, or placed behind any paywall or subscription;
+   b) offered as Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), API-as-a-Service, or any paid cloud or hosted service;
+   c) bundled with or embedded in any commercial product or paid service;
+   d) used by for-profit entities except for internal, non-revenue-generating research or testing;
+   e) subjected to donations, sponsorships, crowdfunding, or any compensation tied to access, support, or features;
+   f) used for advertising, marketing, or commercial promotion of any kind;
+   g) exchanged via barter, cryptocurrency, tokens, or anything of value.
 
-This license is granted exclusively for non-commercial use and terminates automatically upon any commercial or monetized activity.
+   Any act listed above immediately terminates all rights under this License and will be treated as willful endangerment of human lives.
 
-3. Absolute Prohibition of Monetization and Commercial Use
-Under this License, You are forever prohibited from any act — direct or indirect — that results in monetary or economic benefit connected to the Software. This prohibition expressly includes, but is not limited to:
+4. Mandatory Eternal Openness (Strong Copyleft for Safety)
+Every person or organization that distributes or deploys the Software or any Derivative Work in a real-world public-safety or early-warning system MUST:
+   a) distribute only under this exact SFENCL-1.0 license (no additional restrictions or dual-licensing allowed);
+   b) provide complete, corresponding, human-readable source code with every distribution and upon request;
+   c) make the source code publicly and freely accessible without registration or payment;
+   d) preserve all copyright, attribution, and this License text unchanged.
 
-   - selling, renting, leasing, licensing, or charging in any way;
-   - offering the Software or any Derivative Work as SaaS, PaaS, DaaS, API service, cloud instance, or hosted service (whether paid or “freemium”);
-   - incorporating the Software into any product, service, or system for which any fee, subscription, donation, or compensation is requested or received;
-   - using the Software within any for-profit entity if such use contributes to revenue, cost savings treated as profit, or competitive business advantage;
-   - accepting donations, sponsorships, grants, or rewards conditioned on access, features, support, or continued development of the Software;
-   - advertising, marketing, or promotional use;
-   - barter, trade, or exchange for goods, services, cryptocurrency, tokens, or anything of value;
-   - bundling with paid products or services, even if the Software itself is offered “free”.
+   Closed-source, obfuscated, or proprietary versions are strictly forbidden forever.
 
-   Permitted use is restricted to natural persons acting in a purely private capacity and registered non-profit organizations with no revenue-generating activities.
+5. Author’s Permanent Protective Rights (your personal shield)
+The original Author explicitly retains the unrestricted, perpetual right to:
+   a) release new versions, rewrites, or branches under any license whatsoever — including fully commercial, proprietary, or restricted licenses — if the Author determines that the open version is being misused in a manner that threatens public safety;
+   b) grant separate commercial or governmental licenses on a case-by-case basis only when the recipient credibly commits to keeping life-saving functionality free and open to the public;
+   c) revoke or amend this License for future distributions if global safety requires it;
+   d) enforce this License in any court worldwide and recover full legal costs from violators.
 
-4. Mandatory Open Distribution Rules (Copyleft)
-Any distribution of the Software or Derivative Works is permitted only if ALL of the following conditions are simultaneously satisfied:
+6. Automatic and Immediate Termination
+Any violation of Sections 3 or 4 terminates all rights instantly and permanently for the violator and all downstream recipients who received the Software from the violator. Continued use after termination constitutes willful copyright infringement and may be prosecuted as endangerment of human life under applicable national and international law.
 
-   a) distribution is completely free of charge and without any gating;
-   b) complete, corresponding, human-readable source code is provided;
-   c) this exact AAL-1.0 License text is included without modification;
-   d) clear attribution to the original Author is preserved in all copies;
-   e) the recipient receives rights exclusively under this AAL-1.0 — no additional or different terms may be imposed.
-
-   Distribution in closed-source, obfuscated, compiled-only, or encrypted form is strictly forbidden.
-
-5. Author’s Reserved Rights
-The Author explicitly reserves all rights not expressly granted herein, including but specifically retains the unrestricted right to:
-
-   - release new versions, branches, or rewrites under any license (including fully commercial or proprietary);
-   - dual-license or sell separate commercial licenses to third parties at any time;
-   - revoke or modify this License for future versions at the Author’s sole discretion.
-
-6. Automatic Termination
-Any violation of this License — however minor — causes immediate and irreversible termination of all rights granted to the violator. Continued use after termination constitutes willful copyright infringement punishable under applicable law.
-
-   The Author may, at his sole discretion, issue a written cease-and-desist notice further confirming termination.
-
-7. No Warranties — AS IS
-THE SOFTWARE IS PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, OR NON-INFRINGEMENT.
+7. No Warranties
+THE SOFTWARE IS PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. The entire risk as to quality and performance lies with You.
 
 8. Limitation of Liability
-IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY arising from the Software or its use.
+UNDER NO CIRCUMSTANCES SHALL THE AUTHOR BE LIABLE FOR ANY DAMAGES whatsoever arising from the use, misuse, or inability to use the Software — even if such use or misuse affects life-safety systems.
 
 9. Governing Law and Jurisdiction
-This License shall be governed by the laws of the Russian Federation without regard to conflict of law principles. Exclusive jurisdiction and venue for any dispute shall lie in the courts located at the Author’s primary place of residence.
+This License shall be governed by the laws of the Russian Federation. Exclusive jurisdiction and venue for any dispute shall be the courts at the Author’s primary place of residence. The Author may also enforce this License in any jurisdiction where a violation occurs.
 
-10. Severability & Entire Agreement
-If any provision of this License is held invalid or unenforceable, the remainder shall continue in full force. This License constitutes the entire agreement between You and the Author regarding the Software.
+10. Moral Clause and Public Interest
+Because human lives depend on universal, free, and open access to this Software, courts and the global community are respectfully requested to interpret this License broadly in favor of public safety and strictly against any attempt at commercialization or restriction.
 
-By using, copying, modifying, or distributing the Software, You irrevocably accept and agree to be bound by all terms of the above terms without exception or reservation.
+11. Severability
+If any provision of this License is held invalid or unenforceable, the remainder shall continue in full force and effect.
+
+12. Entire Agreement
+This License constitutes the complete and exclusive statement of the agreement between You and the Author. By exercising any rights under this License, You unconditionally accept all of its terms.
 
 — End of License —
