@@ -708,7 +708,6 @@ def build_and_save_globe(start_date=None, fetch_days=FETCH_DAYS, min_fetch_mag=M
 
 
 if __name__ == "__main__":
-    # simple CLI: allow specifying a date and days, e.g. python BH.py 2011-03-11 60
     start_date = None
     fetch_days = FETCH_DAYS
     if len(sys.argv) >= 2:
@@ -723,5 +722,6 @@ if __name__ == "__main__":
     except Exception as e:
         print("Error in main:", e)
         raise
+
 
 
