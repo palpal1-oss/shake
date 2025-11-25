@@ -1,5 +1,5 @@
 SFENCL-1.0 — Safety-First Eternal Non-Commercial License 1.0
-Copyright © 2025–perpetuity [Your Full Legal Name]. All rights exclusively reserved by the Author.
+Copyright © 2025–perpetuity Deryabin Dmitri. All rights exclusively reserved by the Author.
 
 Preamble
 The Software exists for one purpose only: to protect human lives, critical infrastructure, and the environment through accurate, timely, and universally accessible weather forecasting, early-warning systems, climate monitoring, and related public-safety functions.
@@ -70,3 +70,4 @@ If any provision of this License is held invalid or unenforceable, the remainder
 This License constitutes the complete and exclusive statement of the agreement between You and the Author. By exercising any rights under this License, You unconditionally accept all of its terms.
 
 — End of License —
+
