@@ -1,138 +1,129 @@
-**NCOL-2.0 — Non-Commercial Open License
+NCOL-3.0 — Non-Commercial Open License
+(Ultimate Future-Proof Anti-Monetization Edition)
 
-(Enhanced Derivative Protection)**
 Copyright (c) 2025
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (“Software”), to use,
-copy, modify, and distribute it solely under the terms outlined below.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this Software and associated documentation (“Software”), to use, copy, modify, and distribute it exclusively for non-commercial purposes, under the terms of this License.
 
 1. NON-COMMERCIAL USE ONLY
 
-The Software and any Derivative Work (as defined in Section 2) may be used
-exclusively for non-commercial purposes.
+The Software and any Derivative Work may be used only in non-commercial contexts.
 
-Commercial use is strictly prohibited, including but not limited to:
+All forms of commercial, economic, financial, or value-based activity involving the Software or its Derivatives are strictly prohibited.
 
-sale, resale, licensing, SaaS, subscriptions, API access fees;
+This prohibition includes—but is not limited to:
 
-paid consulting, integration, customization, training, analysis;
+sale, resale, licensing, subscriptions, SaaS, API access fees;
 
-indirect monetization, donations for access, sponsorship-for-use;
+paid consulting, integration, support, customization, training;
 
-any economic activity in which the Software or its Derivatives
-provide core functionality, value, computation, processing,
-or enable revenue in any form.
+monetized services, advertising, sponsorships, donations-for-access;
 
-2. DEFINITION OF DERIVATIVE WORK (EXTENDED)
+any system where the Software contributes to revenue, profit, or economic gain.
 
-For the purposes of this License, “Derivative Work” includes, but is not limited to:
+2. FUTURE-PROOF COMMERCIAL VALUE PROHIBITION
 
-modifications, forks, translations, ports, re-expressions, or adaptations;
+For the purpose of this License, “commercial”, “economic”, or “value” is defined as ANY mechanism that grants the user or operator benefit, compensation, credit, utility, capability, or exchange-value, whether direct or indirect.
 
-rewrites or reimplementations in another language, framework, paradigm, or architecture;
+This includes ANY present or future form of value, including mechanisms not yet invented.
 
-any work exhibiting substantial similarity in functionality, structure,
-algorithms, data models, behavior, or interface;
+The prohibition explicitly covers:
 
-components, wrappers, modules, layers, or services that depend on the Software
-for essential or core functionality;
+fiat currency, cryptocurrency, digital assets, tokens, coins, credits;
 
-API wrappers, service layers, or backend systems built around the Software.
+barter, exchange of goods or services, trade of any kind;
 
-A claim of “clean-room implementation” does not exempt a work from being
-considered a Derivative if substantial similarity is present.
+points, rewards, loyalty systems, in-game economies;
 
-3. OPEN DISTRIBUTION REQUIREMENT
+compute-credits, energy-credits, time-based credits, hardware-based value units;
+
+social credit, reputation systems, influence scores, algorithmic ranking;
+
+AI-mediated or emergent economic systems;
+
+any unit of value or exchange that may arise in the future.
+
+If a system yields ANY benefit or exchange-value as a result of the Software’s use, such use is considered commercial and is prohibited.
+
+No future technology, economic innovation, or legal redefinition may narrow this prohibition.
+
+3. DEFINITION OF DERIVATIVE WORK
+
+“Derivative Work” includes any work that is based on, inspired by, derived from, or exhibits substantial similarity to the Software.
+
+This includes:
+
+modifications, patches, extensions, forks, translations, rewrites;
+
+reimplementations in any language, framework, or architecture;
+
+works reproducing algorithms, behavior, data structures, or interfaces;
+
+components, modules, services, or wrappers depending on the Software.
+
+Claims of “clean-room implementation” do not exempt a work if substantial similarity exists.
+
+4. OPEN DISTRIBUTION REQUIREMENTS
 
 Any Derivative Work must:
 
 remain fully open-source;
 
-provide complete, human-readable source code;
+publish complete, human-readable source code;
 
-be publicly accessible without paywalls, registration, or restrictions;
+be accessible without registration, payment, restriction, or gating;
 
-be distributed solely under this same License (NCOL-2.0), without alteration.
+be distributed exclusively under this License (NCOL-3.0).
 
-The following are strictly prohibited:
+Prohibited:
 
-closed-source, proprietary, binary-only, encrypted, or obfuscated releases;
+closed-source or proprietary versions;
 
-splitting functionality into open and closed components to circumvent this License;
+obfuscated, binary-only, or encrypted releases;
 
-bundling with proprietary components that depend on or integrate with the Software.
+hybrid open/closed architectures designed to circumvent this License.
 
-4. PROHIBITION OF COMMERCIAL DERIVATIVES
+5. PROHIBITION OF COMMERCIAL DERIVATIVES
 
-The creation, distribution, deployment, or use of Derivative Works
-in any commercial or revenue-generating context is prohibited.
-
-This prohibition applies even if:
+Derivative Works may not be used in any commercial, financial, or value-based system—even if:
 
 the Software itself is not distributed;
 
-the Derivative is provided through a web interface, API, backend,
-or integrated service;
+the Derivative is accessible via API, backend, or web interface;
 
-access to the Software or Derivative is free,
-but monetization occurs elsewhere in the system.
+the service is free, but monetization occurs elsewhere;
 
-5. LEGAL COMPLIANCE
+the derivative output contributes to economic activity in any layer of the system.
 
-The Software may not be used in violation of any applicable laws or regulations.
+6. LEGAL COMPLIANCE
 
-6. NO WARRANTY AND LIABILITY DISCLAIMER
+Usage must comply with all applicable laws and regulations.
 
-The Software is provided “AS IS”, without warranty of any kind, express or implied.
-In no event shall the authors be liable for any damages arising from the use
-of the Software or any Derivative Work.
+7. NO WARRANTY
 
-7. ACCEPTANCE OF LICENSE
+The Software is provided “AS IS” without warranty of any kind.
+The authors are not liable for any damages arising from its use.
 
-By using, copying, modifying, or distributing the Software, the user agrees
-to be bound by all terms of this License.
+8. AUTOMATIC TERMINATION
 
-8. AUTOMATIC TERMINATION OF RIGHTS
+Rights under this License terminate immediately and automatically if the user:
 
-Any permission granted by this License automatically and immediately terminates,
-without notice, if the user:
+violates any clause of the License;
 
-violates any clause of this License;
+attempts to reinterpret or circumvent restrictions;
 
-attempts to circumvent, reinterpret, or partially comply with terms
-in a way that contradicts the intent of this License;
+uses the Software or Derivatives in a prohibited manner;
 
-distributes or operates the Software or a Derivative in a prohibited manner;
+fails to comply with open-source publication requirements.
 
-fails to meet open-source publication requirements;
+Upon termination, all rights to use, copy, distribute, or modify the Software and any Derivative are revoked.
 
-engages in any form of commercial activity involving the Software
-or any Derivative Work.
+No reinstatement is possible without explicit written approval from the Author.
 
-8.1. Loss of All Rights
+9. CONTINUED USE AFTER TERMINATION
 
-Upon termination, the user loses all rights to:
+Any continued use of the Software after rights have been terminated constitutes willful copyright infringement.
 
-use, run, execute, or deploy the Software;
+10. ACCEPTANCE
 
-copy, distribute, publish, or host the Software;
-
-create, modify, or distribute Derivative Works;
-
-integrate or utilize the Software or its Derivatives in any system or service.
-
-All further use becomes unauthorized and unlawful under applicable copyright law.
-
-8.2. No Reinstatement
-
-Termination is automatic, requires no warning,
-and rights cannot be restored by later attempts at compliance.
-
-Only the original author may explicitly grant renewed permission in writing.
-Silence or lack of response does not constitute consent.
-
-8.3. Continuing Use After Termination
-
-Any continued use after termination constitutes willful copyright infringement
-and may be subject to legal enforcement, takedown actions, and claims for damages.
+By using, copying, modifying, or distributing the Software, the user agrees to all terms of this License.
